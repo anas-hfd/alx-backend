@@ -22,8 +22,9 @@ class FIFOCache(BaseCaching):
         """Add an item in the cache.
 
         If the number of items in self.cache_data is higher than
-        BaseCaching.MAX_ITEMS, discard the first item put in cache (FIFO algorithm).
-        You must print 'DISCARD: {key}' with the key discarded and following by a new line.
+        BaseCaching.MAX_ITEMS, discard the first item put in cache
+        (FIFO algorithm).You must print 'DISCARD: {key}' with the key
+        discarded and following by a new line.
 
         :param key: str - key to add to the cache
         :param item: any - item to add to the cache
@@ -40,8 +41,8 @@ class FIFOCache(BaseCaching):
         """Get an item by key.
 
         :param key: str - key to retrieve value from the cache
-        :return: any - value associated with the key in the cache or None if the key is not
-        present in the cache
+        :return: any - value associated with the key in the cache
+        or None if the key is not present in the cache
         """
         if not key or key not in self.cache_data:
             return None
